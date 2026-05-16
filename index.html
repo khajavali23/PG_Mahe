@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elysian Stay — Premium PG Residences, Bengaluru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<!-- WhatsApp Float -->
+
+<a href="https://wa.me/919876543210"
+   class="whatsapp-float"
+   target="_blank"
+   title="Chat on WhatsApp">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+<!-- Toast notification -->
+<div class="toast" id="toast">
+    <div class="toast-title"><span class="toast-dot"></span>New Booking Today</div>
+    <div class="toast-msg">A professional just booked a Premium AC room</div>
+</div>
+
+<!-- ── NAVBAR ── -->
+<nav id="navbar">
+    <a href="index.html" class="nav-logo">Elysian Stay <span>Premium PG Residences</span></a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book a Visit</a>
+    <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+
+    <ul class="mobile-nav-links">
+        <li>
+            <a href="index.html" class="mobile-link"> Home </a>
+        </li>
+
+        <li>
+            <a href="about-us.html" class="mobile-link"> About Us </a>
+        </li>
+
+        <li>
+            <a href="rooms.html" class="mobile-link"> Rooms </a>
+        </li>
+
+        <li>
+            <a href="facilities.html" class="mobile-link"> Facilities </a>
+        </li>
+
+        <li>
+            <a href="dining.html" class="mobile-link"> Dining </a>
+        </li>
+
+        <li>
+            <a href="gallery.html" class="mobile-link"> Gallery </a>
+        </li>
+
+        <li>
+            <a href="location.html" class="mobile-link"> Location </a>
+        </li>
+
+        <li>
+            <a href="contact.html" class="mobile-link"> Contact </a>
+        </li>
+    </ul>
+</div>
+
+<!-- ── HERO ── -->
+<div class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">✦ Bengaluru's Most Premium PG</div>
+            <h1 class="hero-title">Where Comfort<br />Meets <em>Elegance</em></h1>
+            <p class="hero-subtitle">
+                Elysian Stay is not just a PG — it's a curated living experience for IT professionals, students, and
+                working professionals who deserve the finest in Bengaluru.
+            </p>
+            <div class="hero-actions">
+                <a href="contact.html" class="btn-primary">Book a Visit →</a>
+                <a href="rooms.html" class="btn-ghost">Explore Rooms</a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <div class="hero-stat-num">80+</div>
+                    <div class="hero-stat-label">Happy Residents</div>
+                </div>
+                <div>
+                    <div class="hero-stat-num">4.9★</div>
+                    <div class="hero-stat-label">Average Rating</div>
+                </div>
+                <div>
+                    <div class="hero-stat-num">3yr</div>
+                    <div class="hero-stat-label">Of Excellence</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-float-card hero-float-1">
+                <div class="rating-stars">★★★★★</div>
+                <div class="float-label">Resident Rating</div>
+                <div class="float-value">4.9 / 5</div>
+                <div class="float-sub">Based on 120+ reviews</div>
+            </div>
+            <div class="hero-main-img">
+                <div class="hero-main-img-inner">
+                    <div class="room-mock">
+                        <div class="room-mock-header">
+                            <span class="room-mock-title">Premium Suite</span>
+                            <span class="room-mock-price">₹12,000/mo</span>
+                        </div>
+                        <div class="room-mock-features">
+                            <span class="room-mock-tag">AC</span>
+                            <span class="room-mock-tag">Attached Bath</span>
+                            <span class="room-mock-tag">WiFi</span>
+                            <span class="room-mock-tag">King Bed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-float-card hero-float-2">
+                <div class="float-label">Available Now</div>
+                <div class="float-value">3 Rooms</div>
+                <div class="float-sub">Limited spots left</div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</div>
+
+<!-- ── STATS STRIP ── -->
+<div class="about-strip">
+    <div>
+        <div class="about-item reveal">
+            <span class="about-num">80<span class="about-unit">+</span></span>
+            <div class="about-lbl">Residents Accommodated</div>
+        </div>
+        <div class="about-item reveal reveal-delay-1">
+            <span class="about-num">3<span class="about-unit">yr</span></span>
+            <div class="about-lbl">Years of Trust in Bengaluru</div>
+        </div>
+        <div class="about-item reveal reveal-delay-2">
+            <span class="about-num">24<span class="about-unit">/7</span></span>
+            <div class="about-lbl">Security & Support</div>
+        </div>
+        <div class="about-item reveal reveal-delay-3">
+            <span class="about-num">100<span class="about-unit">%</span></span>
+            <div class="about-lbl">Satisfaction Guaranteed</div>
+        </div>
+    </div>
+</div>
+
+<!-- ── ROOMS ── -->
+<section id="rooms">
+    <div class="reveal">
+        <div class="section-eyebrow">Accommodations</div>
+        <h2 class="section-title">Rooms <em>Crafted</em><br />For Modern Living</h2>
+        <p class="section-desc">
+            From cozy single rooms to premium suites — every space designed for comfort, privacy, and productivity.
+        </p>
+    </div>
+    <div class="rooms-grid">
+        <!-- Room 1 -->
+        <div class="room-card reveal reveal-delay-1">
+            <div class="room-img">
+                <div class="room-img-inner rv-1 room-visual">
+                    <div class="rv-overlay">
+                        <div class="rv-icon">🛏️</div>
+                    </div>
+                    <div class="rv-lines">
+                        <div class="rv-line"></div>
+                        <div class="rv-line"></div>
+                    </div>
+                </div>
+                <div class="room-badge">Popular</div>
+            </div>
+            <div class="room-body">
+                <div class="room-type">Single Occupancy</div>
+                <div class="room-name">Classic Studio Room</div>
+                <div class="room-features">
+                    <span class="room-feat">Non-AC</span>
+                    <span class="room-feat">Shared Bath</span>
+                    <span class="room-feat">WiFi</span>
+                    <span class="room-feat">Study Table</span>
+                </div>
+                <div class="room-footer">
+                    <div>
+                        <div class="room-price">₹7,000 <span>/ month</span></div>
+                    </div>
+                    <a href="contact.html" class="btn-sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Room 2 -->
+        <div class="room-card reveal reveal-delay-2">
+            <div class="room-img">
+                <div class="room-img-inner rv-2 room-visual">
+                    <div class="rv-overlay">
+                        <div class="rv-icon">🏠</div>
+                    </div>
+                    <div class="rv-lines">
+                        <div class="rv-line"></div>
+                        <div class="rv-line"></div>
+                    </div>
+                </div>
+                <div class="room-badge" style="background: #533483; color: white">Premium</div>
+            </div>
+            <div class="room-body">
+                <div class="room-type">Single Occupancy</div>
+                <div class="room-name">Premium AC Room</div>
+                <div class="room-features">
+                    <span class="room-feat">AC</span>
+                    <span class="room-feat">Attached Bath</span>
+                    <span class="room-feat">WiFi</span>
+                    <span class="room-feat">Wardrobe</span>
+                </div>
+                <div class="room-footer">
+                    <div>
+                        <div class="room-price">₹12,000 <span>/ month</span></div>
+                    </div>
+                    <a href="contact.html" class="btn-sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Room 3 -->
+        <div class="room-card reveal reveal-delay-3">
+            <div class="room-img">
+                <div class="room-img-inner rv-3 room-visual">
+                    <div class="rv-overlay">
+                        <div class="rv-icon">👥</div>
+                    </div>
+                    <div class="rv-lines">
+                        <div class="rv-line"></div>
+                        <div class="rv-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="room-body">
+                <div class="room-type">Double Sharing</div>
+                <div class="room-name">Shared Executive Room</div>
+                <div class="room-features">
+                    <span class="room-feat">AC</span>
+                    <span class="room-feat">Shared Bath</span>
+                    <span class="room-feat">WiFi</span>
+                    <span class="room-feat">2 Beds</span>
+                </div>
+                <div class="room-footer">
+                    <div>
+                        <div class="room-price">₹6,000 <span>/ month</span></div>
+                    </div>
+                    <a href="contact.html" class="btn-sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── FACILITIES BENTO ── -->
+<section id="facilities">
+    <div class="reveal">
+        <div class="section-eyebrow">Amenities</div>
+        <h2 class="section-title">Every <em>Detail</em><br />Thought Through</h2>
+    </div>
+    <div class="bento-grid">
+        <div class="bento-cell bento-span-2 bento-big reveal">
+            <div class="bento-icon">📶</div>
+            <div class="bento-title">Blazing Fast WiFi</div>
+            <div class="wifi-speed">200<span>Mbps</span></div>
+            <div class="bento-desc">
+                Dedicated fiber broadband with unlimited data. Work from home, stream, game — without interruption.
+            </div>
+        </div>
+
+        <div class="bento-cell reveal reveal-delay-2">
+            <div class="bento-icon">🔒</div>
+            <div class="bento-title">24/7 Security</div>
+            <div class="security-badges">
+                <span class="sec-badge">CCTV</span>
+                <span class="sec-badge">Biometric</span>
+                <span class="sec-badge">Guard</span>
+            </div>
+        </div>
+        <div class="bento-cell reveal reveal-delay-1">
+            <div class="bento-icon">👕</div>
+            <div class="bento-title">Laundry Service</div>
+            <div class="bento-desc">Washing machines available. Semi-automatic laundry pickup twice a week.</div>
+        </div>
+        <div class="bento-cell reveal reveal-delay-2">
+            <div class="bento-icon">⚡</div>
+            <div class="bento-title">Power Backup</div>
+            <div class="bento-desc">Full generator backup ensures zero downtime. Always-on electricity guaranteed.</div>
+        </div>
+        <div class="bento-cell reveal reveal-delay-3">
+            <div class="bento-icon">🏍️</div>
+            <div class="bento-title">Parking</div>
+            <div class="bento-desc">Secure covered parking for bikes and cycles. Car parking on request.</div>
+        </div>
+        <div class="bento-cell reveal reveal-delay-4">
+            <div class="bento-icon">🧹</div>
+            <div class="bento-title">Housekeeping</div>
+            <div class="bento-desc">Daily room cleaning and weekly deep cleaning included.</div>
+        </div>
+        <div class="bento-cell reveal reveal-delay-5">
+            <div class="bento-icon">🍽️</div>
+            <div class="bento-title">In-house Dining</div>
+            <div class="bento-desc">Home-cooked meals, breakfast to dinner. See our food section.</div>
+        </div>
+        <div class="bento-cell reveal reveal-delay-1">
+            <div class="bento-icon">🛋️</div>
+            <div class="bento-title">Common Lounge</div>
+            <div class="bento-desc">Spacious common area with TV, seating, and a community vibe.</div>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOD SECTION ── -->
+<div class="food-section">
+    <section id="food">
+        <div class="reveal">
+            <div class="section-eyebrow">Dining</div>
+            <h2 class="section-title">Eat <em>Well</em>,<br />Live Better</h2>
+            <p class="section-desc">
+                Chef-curated home meals served fresh every day. South Indian, North Indian, and wholesome variety — feel
+                at home.
+            </p>
+        </div>
+        <div class="food-layout">
+            <div class="food-visual reveal">
+                <div class="food-card">
+                    <span class="food-emoji">🍛</span>
+                    <div class="section-eyebrow" style="margin-bottom: 12px">Today's Menu</div>
+                    <div class="food-menu">
+                        <div class="food-item">
+                            <span class="food-dot"></span><span class="food-item-name">Idli Sambar</span>
+                        </div>
+                        <div class="food-item">
+                            <span class="food-dot"></span><span class="food-item-name">Dosa & Chutney</span>
+                        </div>
+                        <div class="food-item">
+                            <span class="food-dot"></span><span class="food-item-name">Dal Tadka</span>
+                        </div>
+                        <div class="food-item">
+                            <span class="food-dot"></span><span class="food-item-name">Jeera Rice</span>
+                        </div>
+                        <div class="food-item">
+                            <span class="food-dot"></span><span class="food-item-name">Roti & Sabzi</span>
+                        </div>
+                        <div class="food-item">
+                            <span class="food-dot"></span><span class="food-item-name">Rasam Rice</span>
+                        </div>
+                    </div>
+                    <div class="food-float">
+                        <div class="food-float-num">3</div>
+                        <div class="food-float-lbl">Meals / Day</div>
+                    </div>
+                </div>
+            </div>
+            <div class="food-text reveal reveal-delay-2">
+                <div class="food-feature">
+                    <div class="food-feature-icon">🌅</div>
+                    <div>
+                        <div class="food-feature-title">Breakfast (7–9 AM)</div>
+                        <div class="food-feature-desc">
+                            South Indian classics — Idli, Dosa, Upma, Poha, Eggs. Freshly made every morning.
+                        </div>
+                    </div>
+                </div>
+                <div class="food-feature">
+                    <div class="food-feature-icon">☀️</div>
+                    <div>
+                        <div class="food-feature-title">Lunch (12–2 PM)</div>
+                        <div class="food-feature-desc">
+                            Full thali — rice, dal, sabzi, roti, and salad. Rotates daily to keep it interesting.
+                        </div>
+                    </div>
+                </div>
+                <div class="food-feature">
+                    <div class="food-feature-icon">🌙</div>
+                    <div>
+                        <div class="food-feature-title">Dinner (7–9 PM)</div>
+                        <div class="food-feature-desc">
+                            North Indian & South Indian alternating. Wholesome, home-style cooking every night.
+                        </div>
+                    </div>
+                </div>
+                <div class="food-feature">
+                    <div class="food-feature-icon">✅</div>
+                    <div>
+                        <div class="food-feature-title">Dietary Options Available</div>
+                        <div class="food-feature-desc">
+                            Veg, Jain, and low-calorie options. Just let us know your preferences.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ── GALLERY ── -->
+<section id="gallery">
+    <div class="gallery-header reveal">
+        <div>
+            <div class="section-eyebrow">Gallery</div>
+            <h2 class="section-title">A Glimpse of <em>Life</em><br />at Elysian</h2>
+        </div>
+        <a href="#contact" class="btn-ghost" style="white-space: nowrap">Schedule a Tour →</a>
+    </div>
+    <div class="gallery-grid reveal">
+        <div class="gal-cell gc-1">
+            <div class="gal-inner gi-1 room-visual">
+                <div class="gal-center-content">
+                    <div class="gal-room-icon">🛏️</div>
+                    <div class="gal-room-label">Premium AC Suite</div>
+                </div>
+            </div>
+            <div class="gal-overlay"><div class="gal-overlay-icon">🔍</div></div>
+            <div class="gal-label">Premium Suite</div>
+        </div>
+        <div class="gal-cell gc-2">
+            <div class="gal-inner gi-2 room-visual">
+                <div class="gal-center-content">
+                    <div class="gal-room-icon">🍽️</div>
+                    <div class="gal-room-label">Dining Hall</div>
+                </div>
+            </div>
+            <div class="gal-overlay"><div class="gal-overlay-icon">🔍</div></div>
+            <div class="gal-label">Dining Hall</div>
+        </div>
+        <div class="gal-cell gc-3">
+            <div class="gal-inner gi-3 room-visual">
+                <div class="gal-center-content">
+                    <div class="gal-room-icon">🛋️</div>
+                    <div class="gal-room-label">Common Lounge</div>
+                </div>
+            </div>
+            <div class="gal-overlay"><div class="gal-overlay-icon">🔍</div></div>
+            <div class="gal-label">Common Lounge</div>
+        </div>
+        <div class="gal-cell gc-4">
+            <div class="gal-inner gi-4 room-visual">
+                <div class="gal-center-content">
+                    <div class="gal-room-icon">🚿</div>
+                    <div class="gal-room-label">Premium Bathroom</div>
+                </div>
+            </div>
+            <div class="gal-overlay"><div class="gal-overlay-icon">🔍</div></div>
+            <div class="gal-label">Bathroom</div>
+        </div>
+        <div class="gal-cell gc-5">
+            <div class="gal-inner gi-5 room-visual">
+                <div class="gal-center-content">
+                    <div class="gal-room-icon">🏢</div>
+                    <div class="gal-room-label">Building Exterior</div>
+                </div>
+            </div>
+            <div class="gal-overlay"><div class="gal-overlay-icon">🔍</div></div>
+            <div class="gal-label">Exterior</div>
+        </div>
+    </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<div class="testimonials">
+    <section>
+        <div class="reveal" style="text-align: center; max-width: none">
+            <div class="section-eyebrow" style="justify-content: center">Testimonials</div>
+            <h2 class="section-title" style="text-align: center">Heard from <em>Residents</em></h2>
+            <p class="section-desc" style="margin: 0 auto 0">
+                Don't just take our word for it — hear from the people who call Elysian Stay home.
+            </p>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card reveal reveal-delay-1">
+                <div class="testi-quote">"</div>
+                <p class="testi-text">
+                    Moved from Mumbai for a job at Infosys. Elysian Stay felt like home from day one. The food is
+                    amazing, rooms are spotless, and the community is fantastic.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">R</div>
+                    <div>
+                        <div class="testi-name">Rahul Sharma</div>
+                        <div class="testi-role">Software Engineer, Infosys</div>
+                        <div class="testi-stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal reveal-delay-2">
+                <div class="testi-quote">"</div>
+                <p class="testi-text">
+                    The WiFi speed is incredible for remote work. The AC rooms are worth every rupee. I've stayed at 3
+                    PGs in Bangalore — this is by far the best. Clean, safe, modern.
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">A</div>
+                    <div>
+                        <div class="testi-name">Arjun Menon</div>
+                        <div class="testi-role">Product Manager, Flipkart</div>
+                        <div class="testi-stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal reveal-delay-3">
+                <div class="testi-quote">"</div>
+                <p class="testi-text">
+                    As someone relocating from Delhi, I was nervous. But the team here made everything so smooth. The
+                    security is top-notch and the food reminds me of home. Highly recommend!
+                </p>
+                <div class="testi-author">
+                    <div class="testi-avatar">K</div>
+                    <div>
+                        <div class="testi-name">Karan Gupta</div>
+                        <div class="testi-role">Data Analyst, Wipro</div>
+                        <div class="testi-stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ── LOCATION ── -->
+<section id="location">
+    <div class="reveal">
+        <div class="section-eyebrow">Location</div>
+        <h2 class="section-title">At the Heart of <em>Tech</em><br />Bengaluru</h2>
+        <p class="section-desc">
+            Strategically located near Whitefield and Marathahalli — minutes from major IT parks and essential services.
+        </p>
+    </div>
+    <div class="location-layout">
+        <div>
+            <div class="location-card reveal">
+                <div class="loc-icon">💼</div>
+                <div>
+                    <div class="loc-name">Whitefield IT Hub</div>
+                    <div class="loc-dist">5 min drive</div>
+                    <div class="loc-desc">ITPL, Prestige Tech Park, Embassy Tech Village</div>
+                </div>
+            </div>
+            <div class="location-card reveal reveal-delay-1">
+                <div class="loc-icon">🏙️</div>
+                <div>
+                    <div class="loc-name">Marathahalli</div>
+                    <div class="loc-dist">8 min drive</div>
+                    <div class="loc-desc">Shopping malls, restaurants, banks, and more</div>
+                </div>
+            </div>
+            <div class="location-card reveal reveal-delay-2">
+                <div class="loc-icon">🚇</div>
+                <div>
+                    <div class="loc-name">Metro Station</div>
+                    <div class="loc-dist">12 min walk</div>
+                    <div class="loc-desc">Purple Line — easy access across Bengaluru</div>
+                </div>
+            </div>
+            <div class="location-card reveal reveal-delay-3">
+                <div class="loc-icon">🏥</div>
+                <div>
+                    <div class="loc-name">Manipal Hospital</div>
+                    <div class="loc-dist">3 km</div>
+                    <div class="loc-desc">Nearest multi-specialty hospital for emergencies</div>
+                </div>
+            </div>
+            <div class="location-card reveal reveal-delay-4">
+                <div class="loc-icon">🛒</div>
+                <div>
+                    <div class="loc-name">DMart / Supermarkets</div>
+                    <div class="loc-dist">500m walk</div>
+                    <div class="loc-desc">Daily essentials always within reach</div>
+                </div>
+            </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+            <div class="map-mock">
+                <div class="map-bg">
+                    <div class="map-lines"></div>
+                    <div class="map-roads">
+                        <div class="map-road mr1"></div>
+                        <div class="map-road mr2"></div>
+                        <div class="map-road mr3"></div>
+                        <div class="map-road mr4"></div>
+                    </div>
+                    <div class="map-landmark ml1">ITPL</div>
+                    <div class="map-landmark ml2">Marathahalli</div>
+                    <div class="map-landmark ml3">DMart</div>
+                    <div class="map-pin">
+                        <div class="pin-label">Elysian Stay</div>
+                        <div class="pin-tail"></div>
+                        <div class="pin-dot"></div>
+                    </div>
+                </div>
+                <div class="map-footer">
+                    <div class="map-addr">
+                        #42, 3rd Cross, Whitefield Main Rd
+                        <span>Bengaluru, Karnataka — 560066</span>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="btn-sm" style="font-size: 11px"
+                        >Open Maps →</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<div class="contact-section">
+    <section id="contact">
+        <div class="reveal">
+            <div class="section-eyebrow">Get In Touch</div>
+            <h2 class="section-title">Ready to <em>Move In?</em></h2>
+            <p class="section-desc">
+                Book a free site visit, check availability, or just say hello. We'll get back to you within 2 hours.
+            </p>
+        </div>
+        <div class="contact-layout">
+            <div class="reveal">
+                <div class="contact-detail">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <div class="contact-label">Call / WhatsApp</div>
+                        <div class="contact-value">+91 98765 43210</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">hello@elysianstay.in</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <div class="contact-label">Address</div>
+                        <div class="contact-value">#42, 3rd Cross, Whitefield Main Rd, Bengaluru 560066</div>
+                    </div>
+                </div>
+                <div class="contact-detail" style="border-bottom: none">
+                    <div class="contact-icon">🕐</div>
+                    <div>
+                        <div class="contact-label">Visit Hours</div>
+                        <div class="contact-value">Mon – Sat, 9 AM – 7 PM</div>
+                    </div>
+                </div>
+                <div style="margin-top: 40px">
+                    <div
+                        style="
+                            font-size: 13px;
+                            color: var(--muted);
+                            margin-bottom: 16px;
+                            font-family: &quot;Syne&quot;, sans-serif;
+                            letter-spacing: 0.1em;
+                            text-transform: uppercase;
+                        "
+                    >
+                        Follow Us
+                    </div>
+                    <div style="display: flex; gap: 12px">
+                        <a href="#" class="social-link" title="Instagram">📸</a>
+                        <a href="#" class="social-link" title="Facebook">👥</a>
+                        <a href="#" class="social-link" title="LinkedIn">💼</a>
+                        <a href="#" class="social-link" title="YouTube">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form reveal reveal-delay-2">
+                <div class="form-title">Book a Free Site Visit</div>
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-input" placeholder="Your full name" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-input" placeholder="+91 _____ _____" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" placeholder="your@email.com" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Preferred Move-in</label>
+                            <input type="date" class="form-input" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Room Type</label>
+                            <select class="form-select form-input">
+                                <option value="">Select room type</option>
+                                <option>Classic Studio (₹7,000/mo)</option>
+                                <option>Premium AC Room (₹12,000/mo)</option>
+                                <option>Shared Executive (₹6,000/mo)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Occupation</label>
+                            <select class="form-select form-input">
+                                <option value="">Your occupation</option>
+                                <option>IT Professional</option>
+                                <option>Student</option>
+                                <option>Working Professional</option>
+                                <option>Relocating to Bengaluru</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 24px">
+                        <label class="form-label">Message (Optional)</label>
+                        <textarea
+                            class="form-textarea"
+                            placeholder="Any specific requirements or questions..."
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Send Booking Request →</button>
+                    <p class="form-note">✓ No spam. We'll respond within 2 hours during business hours.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo">Elysian Stay</span>
+                <span class="footer-logo-sub">Premium PG Residences · Bengaluru</span>
+                <p class="footer-tagline">
+                    Where professionals find more than accommodation — they find community, comfort, and a place that
+                    feels like home.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Instagram">📸</a>
+                    <a href="#" class="social-link" title="Facebook">👥</a>
+                    <a href="#" class="social-link" title="WhatsApp">💬</a>
+                    <a href="#" class="social-link" title="LinkedIn">💼</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Navigation</div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+
+                    <li>
+                        <a href="about-us.html"> About Us </a>
+                    </li>
+
+                    <li>
+                        <a href="rooms.html"> Rooms </a>
+                    </li>
+
+                    <li>
+                        <a href="facilities.html"> Facilities </a>
+                    </li>
+
+                    <li>
+                        <a href="dining.html"> Dining </a>
+                    </li>
+
+                    <li>
+                        <a href="location.html"> Location </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">For Residents</div>
+                <ul class="footer-links">
+                    <li><a href="#">House Rules</a></li>
+                    <li><a href="#">Maintenance Request</a></li>
+                    <li><a href="#">Mess Menu</a></li>
+                    <li><a href="#">Events & Community</a></li>
+                    <li><a href="#">Refer a Friend</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Contact</div>
+                <ul class="footer-links">
+                    <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                    <li><a href="mailto:hello@elysianstay.in">hello@elysianstay.in</a></li>
+                    <li><a href="#">Whitefield, Bengaluru</a></li>
+                    <li><a href="#">Mon–Sat, 9AM–7PM</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">
+                © 2025 <span>Elysian Stay</span>. All rights reserved. Made with ♥ in Bengaluru.
+            </p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+// ── Custom cursor ──
+const cursor = document.getElementById('cursor');
+const cursorRing = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursor.style.left = mouseX - 5 + 'px';
+  cursor.style.top = mouseY - 5 + 'px';
+});
+
+function animateRing() {
+  ringX += (mouseX - ringX - 18) * 0.15;
+  ringY += (mouseY - ringY - 18) * 0.15;
+  cursorRing.style.left = ringX + 'px';
+  cursorRing.style.top = ringY + 'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+document.querySelectorAll('a, button, .room-card, .bento-cell, .testi-card, .location-card').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.style.transform = 'scale(2)';
+    cursorRing.style.transform = 'scale(1.5)';
+    cursorRing.style.borderColor = 'rgba(201,169,110,0.8)';
+  });
+  el.addEventListener('mouseleave', () => {
+    cursor.style.transform = 'scale(1)';
+    cursorRing.style.transform = 'scale(1)';
+    cursorRing.style.borderColor = 'rgba(201,169,110,0.6)';
+  });
+});
+
+// ── Navbar scroll ──
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+});
+
+// ── Scroll reveal ──
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+revealEls.forEach(el => observer.observe(el));
+
+// ── Mobile menu ──
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileClose = document.getElementById('mobileClose');
+
+mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+});
+
+// ── Toast notification ──
+const toast = document.getElementById('toast');
+setTimeout(() => {
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 4500);
+}, 3000);
+
+// ── Form submit ──
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('button[type="submit"]');
+  btn.textContent = '✓ Request Sent! We\'ll call you soon.';
+  btn.style.background = '#22c55e';
+  btn.style.color = 'white';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = 'Send Booking Request →';
+    btn.style.background = '';
+    btn.style.color = '';
+    btn.disabled = false;
+    this.reset();
+  }, 4000);
+});
+
+// ── Parallax hero ──
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const heroBg = document.querySelector('.hero-bg');
+  if (heroBg) heroBg.style.transform = `translateY(${scrollY * 0.3}px)`;
+});
+
+// ── Counter animation ──
+function animateCounter(el, target, suffix = '') {
+  let current = 0;
+  const increment = target / 60;
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = Math.round(current) + suffix;
+  }, 25);
+}
+const statsObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const nums = entry.target.querySelectorAll('.about-num');
+      const targets = [80, 3, 24, 100];
+      const suffixes = ['+', 'yr', '/7', '%'];
+      nums.forEach((el, i) => {
+        const originalContent = el.textContent;
+        animateCounter(el, targets[i], suffixes[i]);
+      });
+      statsObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+const aboutStrip = document.querySelector('.about-strip');
+if (aboutStrip) statsObserver.observe(aboutStrip);
+
+// ── Hero stat counter on load ──
+setTimeout(() => {
+  const heroStats = document.querySelectorAll('.hero-stat-num');
+}, 1500);
+
+// ── Touch: disable custom cursor on mobile ──
+if ('ontouchstart' in window) {
+  cursor.style.display = 'none';
+  cursorRing.style.display = 'none';
+  document.body.style.cursor = 'auto';
+}
+</script>
+</html>
